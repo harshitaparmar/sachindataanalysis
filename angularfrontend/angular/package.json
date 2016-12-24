@@ -1,0 +1,10 @@
+{
+  "name": "edSters",
+  "version": "0.0.1",
+  "private": false,
+  "main": "app.js",
+  "dependencies": {
+    "chart.js":"latest",
+    "angular-chart.js":"latest"
+      }
+}

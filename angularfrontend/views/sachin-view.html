@@ -1,0 +1,96 @@
+<div class="row" ng-init="getdata.getsachindata()">
+
+<div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                <img src="img/sachin.jpg" class="img-responsive" wdith="200" height="200">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
+                <p><span class="sec-heading">Name: </span>Sachin Ramesh Tendulkar</p>
+                <p><span class="sec-heading">Born: </span>24 April 1973, Bombay (now Mumbai), Maharashtra, India</p>
+                <p><span class="sec-heading">Highest Score: </span>200 <sup>*</sup></p>
+                <p><span class="sec-heading">Nick Name: </span>Tendlya, Little Master, and Master Blaster</p>
+            </div>
+        </div>
+        <div class="row" style="background-color:#26a685;color:white">
+        	<h2 class="sec-heading" style="color:white">Career Summary</h2>
+        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+				<div class="table-responsive table-styling">
+                    <table class="table" >
+                    <tbody>
+                      <tr>
+                        <th>Total Matches</th>
+                        <th>Total Runs</th>
+                        <th>Total Wickets</th>
+                        <th>Total Catches</th>
+                        <th>No. of half century</th>
+                       	<th>No. of full century</th>
+                      </tr>
+                      <tr>
+                        <td>{{getdata.length}}</td>
+                        <td>{{getdata.totalRuns}}</td>
+                        <td>{{getdata.wickets}}</td>
+                        <td>{{getdata.catches}}</td>
+                        <td>{{getdata.halfcentury}}</td>
+                        <td>{{getdata.fullcentury}}</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                    </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+            <h2 class="sec-heading">Full Century Analysis</h2>
+            <hr>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="margin-top:4%">
+             <canvas id="myChart" width="400" height="150"></canvas> 
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12" style="margin-top:4%">
+                <p style="font-size: 1em;text-align: center;color:#03A9F4;"> Sachin scored {{getdata.fullcentury}} full centuries by playing against almost all big teams</p>
+                <p style="font-size: 1em;text-align: center;color:#03A9F4;">Isn't it cool!</p>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <h2 class="sec-heading">Half Century Analysis</h2>
+            <hr>
+            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12" style="margin-top:4%">
+                <p class="sec-heading"> Sachin scored {{getdata.halfcentury}} half centuries by playing against almost all big teams</p>
+                <p class="sec-heading">Isn't it cool!</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="margin-top:4%">
+             <canvas id="myChart1" width="400" height="150"></canvas> 
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <h2 class="sec-heading">Runs vs Inning Analysis</h2>
+            <hr>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:4%">
+             <canvas id="myChart2" width="500" height="150"></canvas> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-top:4%">
+             <p class="sec-heading">As we have seen that, sachin quite well in both batting first as well as in batting second</p>
+             <p class="sec-headingone">He scored <span>{{getdata.runsinbattingfirst}}</span> in batting first and <span>{{getdata.runsinbattingsecond}}</span> in batting second</p> 
+             <p style="font-size: 1em;text-align: center;color:#03A9F4;">His batting average is : {{getdata.battingavg}} </p>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <h2 class="sec-heading">Conclusion</h2>
+            <hr>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:4%">
+             <p class="sec-heading">By considering above charts and analysis we can see sachin tendulkar played extremely well in all innings of the game as well as against almost all temas.</p>
+             <p class="sec-heading">We can say that sachin is the best and  GREATEST CRICKETER OF ALL TIME.</p>
+            </div>
+            <hr>
+        </div>
+    
+        
+</div>  
+
+
+</div>
